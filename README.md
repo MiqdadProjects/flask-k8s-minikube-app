@@ -2,44 +2,58 @@ FLASK APP ON MINIKUBE:
 
 This project demonstrates how to deploy a simple Flask web application in a Kubernetes cluster using Minikube. The app is containerized using Docker and deployed with Kubernetes manifests.
 
-1. Prerequisites
-   Before you begin, ensure that you have the following installed on your machine:
+Prerequisites
+Before you begin, ensure that you have the following installed on your machine:
 
-Docker: https://docs.docker.com/get-docker/
+Docker: Install Docker
 
-Minikube: https://minikube.sigs.k8s.io/docs/start/
+Minikube: Install Minikube
 
-kubectl: https://kubernetes.io/docs/tasks/tools/install-kubectl/
+kubectl: Install kubectl
 
-Git:  https://git-scm.com/book/en/v2/Getting-Started-Installing-Git/
+Git: Install Git
 
-2. BUILD THE DOCKERIMAGE
-    Build the Docker image from the Dockerfile:
+ Build the Docker Image
+Build the Docker image from the Dockerfile:
 
-       docker build -t flask-app:latest .
+bash
+Copy
+Edit
+docker build -t flask-app:latest .
 
-3. Run the Flask App Locally
-    If you want to test the app locally before deploying it to Minikube, run it using Docker:
+Run the Flask App Locally
+If you want to test the app locally before deploying it to Minikube, run it using Docker:
 
-       docker run -p 5000:5000 flask-app 
+bash
+Copy
+Edit
 
-4. Minikube Deployment
-   
-    Start Minikube to set up a local Kubernetes cluster:
+docker run -p 5000:5000 flask-app 
 
+Minikube Deployment
 
-       minikube start
+Start Minikube
+Start Minikube to set up a local Kubernetes cluster:
 
-5. Apply Kubernetes Manifests
-     Deploy the Flask app to Minikube using the Kubernetes manifests (deployment.yaml and service.yaml):
+bash
+Copy
+Edit
+minikube start
 
-       kubectl apply -f deployment.yaml
-       kubectl apply -f service.yaml
+Apply Kubernetes Manifests
+Deploy the Flask app to Minikube using the Kubernetes manifests (deployment.yaml and service.yaml):
 
-6. Access the Flask App via Minikube
-    Once the deployment is successful, access the app through Minikube’s exposed NodePort:
+bash
+Copy
+Edit
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
 
+Access the Flask App via Minikube
+Once the deployment is successful, access the app through Minikube’s exposed NodePort:
 
-        minikube service flask-app-service
-
+bash
+Copy
+Edit
+minikube service flask-app-service
 This will open the app in your default browser at the Minikube IP.
