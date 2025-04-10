@@ -44,6 +44,6 @@ Deploy the Flask app to Minikube using the Kubernetes manifests (deployment.yaml
    Once the deployment is successful, access the app through Minikube’s exposed NodePort:
 
 
-      minikube service flask-app-service
-      
+          minikube service flask-app-service
+
 This will open the app in your default browser at the Minikube IP.
