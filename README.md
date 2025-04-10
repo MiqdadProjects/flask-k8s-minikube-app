@@ -14,6 +14,7 @@ kubectl: https://kubernetes.io/docs/tasks/tools/install-kubectl/
 Git:  https://git-scm.com/book/en/v2/Getting-Started-Installing-Git/
 
 2. BUILD THE DOCKERIMAGE
+
     Build the Docker image from the Dockerfile:
 
        docker build -t flask-app:latest .
