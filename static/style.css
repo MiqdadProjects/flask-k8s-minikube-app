@@ -1,9 +1,9 @@
-/* Apply a vibrant gradient background with red included */
+/* Apply a vibrant gradient background with red and additional colors */
 body {
-    background: linear-gradient(135deg, #ff0000, #ff7eb3, #ff758c, #ffb974, #87e1ff);
+    background: linear-gradient(135deg, #ff0000, #ff7eb3, #ff758c, #ffb974, #87e1ff, #33cc33, #6600cc);
     background-size: 400% 400%; /* Create a flowing animation effect */
     font-family: 'Poppins', sans-serif; /* Use a modern font */
-    color: #0c0101; /* Set default text color to white for readability */
+    color: #0f0303; /* Set default text color to white for readability */
     margin: 0;
     padding: 0;
     animation: gradientAnimation 10s ease infinite; /* Add animation to the gradient */
