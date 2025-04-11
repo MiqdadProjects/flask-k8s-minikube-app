@@ -7,6 +7,7 @@ COPY . .
 
 RUN pip install flask
 
+# EXPOSE APP ON THIS PORT
 EXPOSE 5000
 
 CMD ["python", "app.py"] 
