@@ -29,7 +29,7 @@ Git:      https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 Start Minikube to set up a local Kubernetes cluster:
 
 
-   minikube start
+     minikube start
 
 5. Apply Kubernetes Manifests
 
