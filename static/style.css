@@ -1,40 +1,42 @@
-/* Apply a vibrant gradient background with red and additional colors */
+/* Background gradient animation */
 body {
     background: linear-gradient(135deg, #ff0000, #ff7eb3, #ff758c, #ffb974, #87e1ff, #33cc33, #6600cc);
-    background-size: 400% 400%; /* Create a flowing animation effect */
-    font-family: 'Poppins', sans-serif; /* Use a modern font */
-    color: #0f0303; /* Set default text color to white for readability */
+    background-size: 400% 400%;
+    font-family: 'Poppins', sans-serif;
+    color: #0f0303;
     margin: 0;
     padding: 0;
-    animation: gradientAnimation 10s ease infinite; /* Add animation to the gradient */
+    animation: gradientAnimation 10s ease infinite;
+    transition: background 1s ease-in-out;
 }
 
-/* Center the container and add spacing */
+/* Styled container */
 .container {
     text-align: center;
-    margin-top: 100px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Add a subtle shadow */
+    padding: 40px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); /* ✅ New: subtle blur effect for glassmorphism look */
+    animation: fadeInUp 1.5s ease; /* ✅ New: entry animation */
 }
 
-/* Style the heading for emphasis */
+/* Emphasized heading */
 h1 {
-    font-size: 3rem; /* Increase font size for impact */
-    font-weight: bold; /* Make the text bold */
-    color: #ffeb3b; /* Use a vibrant yellow color for contrast */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a soft shadow to the text */
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Add hover effects for interactivity (if needed) */
+/* Hover effects for heading */
 h1:hover {
-    color: #03a9f4; /* Change color on hover */
-    transform: scale(1.05); /* Slightly enlarge the text on hover */
-    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+    color: #03a9f4;
+    transform: scale(1.08); /* ✅ Slightly increased hover scale */
+    transition: all 0.4s ease-in-out;
 }
 
-/* Keyframes for animated gradient background */
+/* Animated gradient background keyframes */
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -45,4 +47,21 @@ h1:hover {
     100% {
         background-position: 0% 50%;
     }
+}
+
+/* ✅ New: Fade-in animation for container */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ✅ Optional: Navbar color tweak (if needed, override Bootstrap) */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9) !important;
 }
