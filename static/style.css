@@ -15,7 +15,7 @@ body {
     text-align: center;
     padding: 40px;
     border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(177, 144, 36, 0.767);
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px); /* ✅ New: subtle blur effect for glassmorphism look */
     animation: fadeInUp 1.5s ease; /* ✅ New: entry animation */
