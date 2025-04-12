@@ -1,4 +1,4 @@
-/* Background gradient animation */
+/* 🌈 Background gradient animation */
 body {
     background: linear-gradient(135deg, #ff0000, #ff7eb3, #ff758c, #ffb974, #87e1ff, #33cc33, #6600cc);
     background-size: 400% 400%;
@@ -10,33 +10,41 @@ body {
     transition: background 1s ease-in-out;
 }
 
-/* Styled container */
+/* 💎 Styled container with animation and glass effect */
 .container {
     text-align: center;
     padding: 40px;
     border-radius: 12px;
     background-color: rgba(177, 144, 36, 0.767);
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px); /* ✅ New: subtle blur effect for glassmorphism look */
-    animation: fadeInUp 1.5s ease; /* ✅ New: entry animation */
+    backdrop-filter: blur(10px);
+    animation: fadeInUp 1.5s ease;
 }
 
-/* Emphasized heading */
+/* 🌟 Emphasized heading with pulsing glow */
 h1 {
     font-size: 3rem;
     font-weight: bold;
     color: #ffeb3b;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: glowPulse 3s infinite alternate; /* ✅ New: glowing animation */
 }
 
-/* Hover effects for heading */
+/* ✨ Hover effects for heading */
 h1:hover {
     color: #03a9f4;
-    transform: scale(1.08); /* ✅ Slightly increased hover scale */
+    transform: scale(1.08);
     transition: all 0.4s ease-in-out;
 }
 
-/* Animated gradient background keyframes */
+/* 💡 Animated paragraph appearance */
+p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    animation: fadeIn 2.5s ease;
+}
+
+/* 🌈 Keyframes: gradient background */
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -49,7 +57,7 @@ h1:hover {
     }
 }
 
-/* ✅ New: Fade-in animation for container */
+/* 📦 Keyframes: container entrance from bottom */
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -61,7 +69,27 @@ h1:hover {
     }
 }
 
-/* ✅ Optional: Navbar color tweak (if needed, override Bootstrap) */
+/* 📥 Keyframes: fade-in for text */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 🌟 Keyframes: glowing pulse for h1 */
+@keyframes glowPulse {
+    0% {
+        text-shadow: 0 0 10px #ffeb3b, 0 0 20px #ffeb3b;
+    }
+    100% {
+        text-shadow: 0 0 15px #03a9f4, 0 0 30px #03a9f4;
+    }
+}
+
+/* 🧭 Navbar visual override (optional) */
 .navbar {
     background-color: rgba(0, 0, 0, 0.9) !important;
 }
