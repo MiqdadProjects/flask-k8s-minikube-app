@@ -1,4 +1,4 @@
-/* 🌈 Background gradient animation */
+/* Background Gradient Animation */
 body {
     background: linear-gradient(135deg, #ff0000, #ff7eb3, #ff758c, #ffb974, #87e1ff, #33cc33, #6600cc);
     background-size: 400% 400%;
@@ -10,7 +10,7 @@ body {
     transition: background 1s ease-in-out;
 }
 
-/* 💎 Styled container with animation and glass effect */
+/* Styled Container */
 .container {
     text-align: center;
     padding: 40px;
@@ -21,30 +21,30 @@ body {
     animation: fadeInUp 1.5s ease;
 }
 
-/* 🌟 Emphasized heading with pulsing glow */
+/* Emphasized Heading */
 h1 {
     font-size: 3rem;
     font-weight: bold;
     color: #ffeb3b;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    animation: glowPulse 3s infinite alternate; /* ✅ New: glowing animation */
+    animation: glowPulse 3s infinite alternate;
 }
 
-/* ✨ Hover effects for heading */
+/* Hover Effects for Heading */
 h1:hover {
     color: #03a9f4;
     transform: scale(1.08);
     transition: all 0.4s ease-in-out;
 }
 
-/* 💡 Animated paragraph appearance */
+/* Animated Paragraph Appearance */
 p {
     font-size: 1.2rem;
     margin-top: 20px;
     animation: fadeIn 2.5s ease;
 }
 
-/* 🌈 Keyframes: gradient background */
+/* Gradient Background Keyframes */
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -57,7 +57,7 @@ p {
     }
 }
 
-/* 📦 Keyframes: container entrance from bottom */
+/* Container Entrance Keyframes */
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -69,7 +69,7 @@ p {
     }
 }
 
-/* 📥 Keyframes: fade-in for text */
+/* Fade-In Keyframes for Text */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -79,7 +79,7 @@ p {
     }
 }
 
-/* 🌟 Keyframes: glowing pulse for h1 */
+/* Glowing Pulse Keyframes for h1 */
 @keyframes glowPulse {
     0% {
         text-shadow: 0 0 10px #ffeb3b, 0 0 20px #ffeb3b;
@@ -89,7 +89,39 @@ p {
     }
 }
 
-/* 🧭 Navbar visual override (optional) */
+/* Navbar Visual Override */
 .navbar {
     background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Rocket Icon Animation */
+.rocket-icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    animation: rocketLaunch 3s ease-in-out forwards;
+}
+
+/* Rocket Launch Keyframes */
+@keyframes rocketLaunch {
+    0% {
+        bottom: 0;
+        left: 50%;
+        opacity: 1;
+        transform: translateX(-50%);
+    }
+    50% {
+        bottom: 50vh;
+        left: 70%;
+        opacity: 0.8;
+        transform: translateX(0);
+    }
+    100% {
+        bottom: -10vh;
+        left: 100%;
+        opacity: 0;
+        transform: translateX(0);
+    }
 }
