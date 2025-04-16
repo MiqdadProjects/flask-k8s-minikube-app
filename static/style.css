@@ -125,3 +125,14 @@ p {
         transform: translateX(0);
     }
 }
+
+/* Hover effect for colored text */
+.colored-text {
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.colored-text:hover {
+    color: #546E7A !important; /* Changes color to a muted blue-gray on hover */
+    transform: scale(1.1); /* Slightly enlarge text on hover */
+}
