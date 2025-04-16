@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Hello Flask</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -24,12 +24,22 @@
       </div>
     </div>
   </nav>
-  
 
   <!-- Content Section -->
   <div class="container mt-5 text-center">
-    <h1>Hello, World from Flask on Kubernetes! 🚀</h1>
-    <p>This is a styled version of your app running inside a Docker container and deployed via Minikube.</p>
+    <h1 class="fw-semibold text-primary mb-4" style="font-size:2.2rem;">
+      Hello, World from Flask on Kubernetes! <span style="font-size:1.5rem;">🚀</span>
+    </h1>
+    <div class="d-inline-block px-4 py-3 bg-white bg-opacity-75 rounded-4 shadow-sm border border-2 border-primary-subtle" style="max-width: 480px;">
+      <p class="mb-0" style="font-size:1.1rem; line-height:1.6; font-weight: 500;">
+        <span style="font-size:1.3rem; vertical-align:middle;">🛳️</span>
+        <span>
+          Experience a <span style="color:#ff6f61; font-weight:bold;">beautifully styled</span> Flask app, 
+          <span style="color:#4caf50; font-weight:bold;">containerized with Docker</span> and 
+          <span style="color:#2196f3; font-weight:bold;">effortlessly deployed on Minikube</span>.
+        </span>
+      </p>
+    </div>
   </div>
 
   <!-- Rocket Icon -->
