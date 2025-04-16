@@ -25,14 +25,14 @@ body {
 h1 {
     font-size: 3rem;
     font-weight: bold;
-    color: #ffeb3b;
+    color: #3bffd5;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     animation: glowPulse 3s infinite alternate;
 }
 
 /* Hover Effects for Heading */
 h1:hover {
-    color: #03a9f4;
+    color: #f40303;
     transform: scale(1.08);
     transition: all 0.4s ease-in-out;
 }
